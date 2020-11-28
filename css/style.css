@@ -1,0 +1,157 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Barlow Condensed";
+	color: #FFF;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	background-image: url(../img/porto.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* BG OVERLAY */
+.overlay-wrapper {
+	position: absolute;
+	z-index: -1000;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: row;
+}
+
+.overlay {
+	flex: 1;
+	border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.last-overlay {
+	border-right: none;
+}
+
+/* NAVIGATION */
+.nav-wrapper {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 200px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.hamburger {
+	height: 10px;
+	width: 25px;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.hamburger div {
+	height: 2px;
+	width: 100%;
+	background-color: #FFF;
+}
+
+.nav-wrapper h1 {
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: 600;
+	margin-left: 50px
+}
+
+.info-wrapper {
+	display: flex;
+	align-items: center;
+}
+
+.info-wrapper span {
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-right: 20px;
+	font-size: 13px;
+}
+
+.circle {
+	height: 45px;
+	width: 45px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 15px 16px 15px;
+}
+
+.circle div {
+	width: 3px;
+	height: 15px;
+	background-color: #FFF
+}
+
+.circle .one {
+	height: 8px;
+}
+
+.circle .two {
+	height: 6px;
+}
+
+.circle .three {
+	height: 12px;
+}
+
+/* MIDDLE CONTENT */
+.middle-wrapper {
+	bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.middle-wrapper h3 {
+	font-size: 40px;
+	font-weight: 600;
+	letter-spacing: 3px;
+}
+
+.middle-wrapper h1 {
+	font-size: 110px;
+	font-weight: 600;
+	letter-spacing: 10px;
+	margin-bottom: 15px
+}
+
+.middle-wrapper a {
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+/* SCROLL CIRCLE */
+.scroll-circle {
+	position: absolute;
+	bottom: 50px;
+	height: 60px;
+	width: 60px;
+	border: 1px dotted #FFF;
+	border-radius: 100%;
+	background-color: rgba(255, 255, 255, 0.15);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.scroll-circle i {
+	transform: scale(0.85);
+	margin-top: 2px;
+}
